@@ -1,0 +1,118 @@
+.browse {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+.browse_top_text {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #333333;
+}
+
+.browse_center_text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 62px;
+}
+
+.browse_bottom_group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.browse_card {
+    max-width: 336px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.browse_card_img {
+    max-width: 381px;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 21px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover .browse_card_box {
+        opacity: 1;
+        transition: .5s;
+    }
+
+    &:hover .browse_card_images {
+        transform: scale(1.1);
+        transition: .5s;
+    }
+}
+
+.browse_card_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background: #0000006f;
+    z-index: 1;
+}
+
+.browse_card_images {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.browse_card_text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+}
+
+@media (max-width: 1100px) {
+    .browse_bottom_group {
+        flex-direction: column;
+    }
+
+    .browse_card {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .browse_card_img {
+        max-width: 800px;
+        width: 100%;
+        height: 340px;
+    }
+}
+
+@media (max-width: 400px) {
+    .browse_top_text {
+        font-size: 24px;
+    }
+
+    .browse_center_text {
+        font-size: 16px;
+    }
+}

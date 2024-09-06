@@ -1,0 +1,106 @@
+.hero_big {
+    max-width: 1440px;
+    width: 100%;
+    height: 716px;
+    margin: 0 auto;
+    background-image: url("../../assets/images/scandinavian-interior-mockup-wall-decal-background\ 1.png");
+    background-size: cover;
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero_card {
+    width: 643px;
+    height: 443px;
+    border-radius: 10px;
+    background: #FFF3E3;
+    padding: 62px 43px 37px 39px;
+}
+
+.hero_card_top_text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+.hero_card_center_text {
+    max-width: 559px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+    color: #B88E2F;
+    margin-bottom: 17px;
+}
+
+.hero_card_bottom_text {
+    max-width: 540px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 46px;
+}
+
+.hero_btn {
+    width: 222px;
+    height: 74px;
+    background: #B88E2F;
+    cursor: pointer;
+    transition: .3s;
+    border: 1.5px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &:hover{
+        background: #FFFFFF;
+        color: #B88E2F;
+        border-color: #B88E2F;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 590px) {
+    .hero_big {
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .hero_card {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .hero_card_center_text {
+        font-size: 34px;
+        line-height: 40.5px;
+    }
+    .hero_card_bottom_text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero_card_center_text {
+        font-size: 24px;
+        line-height: 30.5px;
+    }
+}
