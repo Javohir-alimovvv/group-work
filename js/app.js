@@ -141,4 +141,51 @@
     
 // }
 
+// 9#
+
+// {
+//     function multiplyLargerByTen(a, b) {
+//         if (a > b) {
+//             return a * 10;
+//         } else {
+//             return b * 10;
+//         }
+//     }
+    
+//     const a = 5;
+//     const b = 8;
+//     const result = multiplyLargerByTen(a, b);
+    
+//     console.log(result);
+    
+// }
+
+
+// 10#
+
+// {
+//     function countOddEven(numbers) {
+//         let oddCount = 0;
+//         let evenCount = 0;
+    
+//         numbers.forEach(num => {
+//             if (num % 2 === 0) {
+//                 evenCount++;
+//             } else {
+//                 oddCount++;
+//             }
+//         });
+    
+//         return {
+//             oddCount: oddCount,
+//             evenCount: evenCount
+//         };
+//     }
+    
+//     const numbers = [3, 6, 9];
+//     const result = countOddEven(numbers);
+    
+//     console.log(`Toq sonlar: ${result.oddCount}, Juft sonlar: ${result.evenCount}`);
+// }
+
 
